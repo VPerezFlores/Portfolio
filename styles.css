@@ -26,13 +26,21 @@ html{
     font-size: 63.5%;
 }
 
+/* top */
+/* ----------------------------------------------------------------------------------- */
+
 body{
-    background-color: #ffffff;
+    background-color: #aeaeae;
 }
 
 a{
     display: block;
     padding: 8px;
+}
+
+a:active, a:visited{
+    color: white;
+    text-decoration: none;
 }
 
 /* the background-color will ride across the whole nav bar */
@@ -59,17 +67,15 @@ li a {
 
 /* changes the hover links on the nav bar */
 li a:hover {
-    background-color: #111;
-}
-
-.active-btn{
     background-color: #2a87ce;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
-
-
+/* center */
+/* ---------------------------------------------------------------------------- */
 .project-sections{
-    margin-top: 14rem;
+    padding-top: 14rem;
 }
 
 .greeting h1{
@@ -80,38 +86,58 @@ li a:hover {
 .name{
     text-align: center;
     font-size: var(--font-size-md);
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 .second-section{
-    background-color: #aeaeae;
+    background-color: #ffffff ;
+    padding-bottom: 12rem;
 }
 
 .ps-header{
     margin-top: 14rem;
     margin-bottom: 0.5rem;
-    padding-top: 1rem;
-    font-size: var(--font-size-md);
+    padding-top: 8rem;
+    padding-bottom: 0.5rem;
+    font-size: var(--font-size-lg);
 }
 
 .ps-subheader{
-    padding-top: 1rem;
-    font-size: var(--font-size-xsm);
+    padding-top: 0.4rem;
+    font-size: var(--font-size-sm);
 }
 
 .ps-header, .ps-subheader{
     text-align: center;
 }
 
-
-
+/* Bottom */
+/* ---------------------------------------------------------------------------- */
 .contact{
-    margin-top: 14rem;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    text-align: center;
 }
 
+.contact-header{
+    font-size: var(--font-size-sm);
+}
 
-@media screen and (max-width: 900px){
-    .body{
-        background-color: whitesmoke;
+.contact-links{
+    padding-top: 3rem;
+}
+
+.github-contact{
+    color: black;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-color: #aeaeae;
     }
+
+    .center-list{
+        
+    }
+    
 }
