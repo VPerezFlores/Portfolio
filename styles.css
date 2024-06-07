@@ -62,7 +62,7 @@ li a {
     padding: 16px 18px;
     text-decoration: none;
     color: white;
-    font-size: var(--font-size-xsm);
+    font-size: var(--font-size-sm);
 }
 
 /* changes the hover links on the nav bar */
@@ -136,8 +136,9 @@ li a:hover {
         background-color: #aeaeae;
     }
 
-    .center-list{
-        
+    li{
+        float:none;
+        display: block;
     }
     
 }
